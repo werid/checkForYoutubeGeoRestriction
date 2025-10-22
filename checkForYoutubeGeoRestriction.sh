@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # A script to automagically check for YouTube geo-restrictions.
 # Author @michealespinola https://github.com/michealespinola/checkForYoutubeGeoRestriction
 # shellcheck source=/dev/null
