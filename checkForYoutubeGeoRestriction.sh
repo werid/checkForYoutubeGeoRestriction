@@ -197,7 +197,7 @@ for VIDEO_URL in "${URLS[@]}"; do
     #DEBUG  printf "%12s: %s of %s\n" "EXTRA" "$ALLOWED_COUNT" "$ISOCODE_COUNT"
   fi
   # The allowed list is explicitly listed by YouTube.
-  # The blocked list is inferred ba$sed on all other known registered countries that are applicably registered as Internet entities.
+  # The blocked list is inferred based on all other known registered countries that are applicably registered as Internet entities.
   printf "\n"
   translate_codes "$ALLOWED_CODES" "Allowed Countries ($ALLOWED_COUNT of $ISOCODE_COUNT):"
   if [[ "$SHOW_BLOCKED" -eq 1 ]]; then
