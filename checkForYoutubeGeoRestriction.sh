@@ -51,9 +51,11 @@ count_nonempty_lines() {
 
 # check required tools
 if [[ "$(uname)" =~ ^(Darwin|DragonFly|.*BSD)$ ]]; then
-  sed=gsed grep=ggrep
+  sed=gsed
+  grep=ggrep
 else
-  sed=sed grep=grep
+  sed=sed
+  grep=grep
 fi
 
 cmds=(jq curl "$sed" "$grep")
