@@ -50,7 +50,7 @@ count_nonempty_lines() {
 }
 
 # check required tools
-if [[ "$(uname)" =~ ^(Darwin|FreeBSD|NetBSD|OpenBSD)$ ]]; then
+if [[ "$(uname)" =~ ^(Darwin|DragonFly|.*BSD)$ ]]; then
   sed=gsed grep=ggrep
 else
   sed=sed grep=grep
